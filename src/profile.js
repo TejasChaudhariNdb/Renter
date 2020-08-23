@@ -8,7 +8,7 @@ export default function navbar() {
   <div className="card-container">
  <h1>Tejas Chauhdari</h1>
  <p className="title">CEO & Founder : Renter</p>
- <p><button>Contact</button></p>
+ <p><button className="contact">Contact</button></p>
       </div>
   </div>
   </div>

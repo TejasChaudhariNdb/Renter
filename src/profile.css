@@ -18,6 +18,7 @@
   img {
     border-radius: 5px 5px 0 0;
     margin-top:5%;
+    width: 100%;
   }
   
   .card-container {
@@ -29,7 +30,7 @@
     font-size: 18px;
   }
 
-  button {
+  .contact {
     border: none;
     outline: 0;
     display: inline-block;
@@ -43,6 +44,6 @@
   }
 
   
-button:hover, a:hover {
+.contact:hover, a:hover {
     opacity: 0.7;
   }

@@ -17,7 +17,7 @@ export default function todos({todo,complete,del}) {
   
     return (
     <>
-    <div className="card">
+    <div className="todo_card">
    
      <input type="checkbox" checked={todo.check} onChange={handelChange} />
     {todo.name}

@@ -2,7 +2,7 @@
     padding: 25px;
 }
 
-.card {
+.todo_card{
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
@@ -12,7 +12,7 @@
    margin: 8px;
   }
   
-  .card:hover {
+  .todo_card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
@@ -23,7 +23,7 @@
       width: 220px;
       padding:10px;
   }
-  button{
+  .add_btn{
       padding: 10px;
       color:white;
       text-decoration: none;
@@ -33,7 +33,8 @@
       font-size: 16px;
     }
   
-    button:hover {
+    
+    .sadd_btn:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         background-color:white;
         color:#aa00ff;
@@ -61,4 +62,10 @@
         background-color:red;
        padding: 5px;
        margin-left:15px ;
+       border:none;
+       text-decoration: none;
+       display: inline-block;
+      color:white;
+      font-size:15px;
+      float: right;
       }

@@ -1,74 +1,33 @@
 import React,{useState,useRef ,useEffect} from 'react';
 import NavBar from './navbar.js';
-import TodoList from './todoList.js';
 import Footer from './footer.js';
+import Profile from './profile.js';
+import Man from './Man.js';
 import './App.css';
-import './todo.css';
+
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
 
 
-
-function App() {
- const [tododada, setTodo] = useState([])
- const todoName = useRef();
-
-
-function complete(id){
- const newTodo = [...tododada];
- const todo = newTodo.find(todo =>todo.id === id)
- todo.check = !todo.check
- setTodo(newTodo)
-
-
-}
-
-function del(id){
-  const newTodo = [...tododada];
-  const todo = newTodo.filter(todo => todo.id !== id)
-  setTodo(todo)
-}
-
-useEffect(() => {
-  const getTodos = JSON.parse(localStorage.getItem('todo_app'))
- if(getTodos) setTodo(getTodos)
-},[])
- 
-
- useEffect(() => {
-   localStorage.setItem('todo_app',JSON.stringify(tododada))
-
- }, [tododada])
- 
- function addTo(e){
-  const d = new Date();
-  const name = todoName.current.value;
-  console.log(name);
-  todoName.current.value =null;
-  
-  setTodo(prevTodos =>{
-    return [...prevTodos,{id:d.getSeconds()	,name:name,complet:false}]
-  })
-  
-  return name
- }
+export default function App() {
  
  return (
     <>
 
    <NavBar />
-  {/* <Profile /> */}
+  <Router>
+
+<Link to="">Todo</Link>
+<Link to="/profile">Profile</Link>
+
+
   <div className="container">
+
+<Route exact path="/" component={Man}></Route>
+<Route path="/profile" component={Profile}></Route>
+
    
-
-
-
-
-<input ref={todoName} type="text" className="input"/>
-<button onClick={addTo} type="submit">Add</button>
-<div className="todo_list">
-<TodoList  todos={tododada} complete={complete} del={del}/>
 </div>
-</div>
-
+</Router>
 
   <Footer />
   </>
@@ -76,4 +35,3 @@ useEffect(() => {
 }
 
 
-export default App;

@@ -23,7 +23,7 @@ function complete(id){
 
 function del(id){
   const newTodo = [...tododada];
-  const todo = newTodo.filter(todo => todo.id !== todo.id)
+  const todo = newTodo.filter(todo => todo.id !== id)
   setTodo(todo)
 }
 

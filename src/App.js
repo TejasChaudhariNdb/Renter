@@ -11,7 +11,7 @@ function App() {
  const [tododada, setTodo] = useState([])
  const todoName = useRef();
 
-/*
+
 function complete(id){
  const newTodo = [...tododada];
  const todo = newTodo.find(todo =>todo.id === id)
@@ -20,7 +20,12 @@ function complete(id){
 
 
 }
-*/
+
+function del(id){
+  const newTodo = [...tododada];
+  const todo = newTodo.filter(todo => todo.id !== todo.id)
+  setTodo(todo)
+}
 
 useEffect(() => {
   const getTodos = JSON.parse(localStorage.getItem('todo_app'))
@@ -58,9 +63,9 @@ useEffect(() => {
 
 
 <input ref={todoName} type="text" className="input"/>
-<button onClick={addTo}>Add</button>
+<button onClick={addTo} type="submit">Add</button>
 <div className="todo_list">
-<TodoList  todos={tododada}/>
+<TodoList  todos={tododada} complete={complete} del={del}/>
 </div>
 </div>
 

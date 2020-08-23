@@ -5,9 +5,9 @@ export default function navbar() {
       <div>
   
   <div className="nav">
-    <p className="logo">NeaBom</p>
+    <p className="logo">NeaBom Ndb</p>
   </div>
   
   </div>
     );
-  }
+  }   

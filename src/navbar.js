@@ -5,7 +5,7 @@ export default function navbar() {
       <div>
   
   <div className="nav">
-    <p className="logo">Tejas Sanjay Chaudhari NDB</p>
+    <p className="logo">NeaBom</p>
   </div>
   
   </div>

@@ -5,7 +5,7 @@ export default function navbar() {
       <div>
   
   <div className="nav">
-    <p className="logo">NeaBom Ndb</p>
+    <p className="logo">NeaBom</p>
   </div>
   
   </div>

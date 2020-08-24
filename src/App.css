@@ -2,14 +2,30 @@
   background-color:#ef6c00;
   height:0px;
   width:auto;
-  padding:30px;
+  padding:20px;
 
 }
 .logo{
-  font-size:20px;
+  font-size:15px;
   margin-top: -10px;
 
   color:white;
   text-align: center;
 
+}
+
+.nav_link{
+background-color: black;
+width: auto;
+padding: 20px;
+overflow: hidden;
+text-align: center;
+
+}
+.route_link{
+  color:white !important;
+  text-decoration-line: none;
+  margin:5%;
+
+  
 }

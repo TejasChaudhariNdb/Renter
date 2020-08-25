@@ -12,7 +12,9 @@ export default function Shop() {
 <Product name="Mobile" price="14880" />
 <Product name="Mobile" price="14880" />
 <Product name="Mobile" price="14880" />
-    
+
+<div id="snackbar">Item Added</div>
+
         </div>
     )
 }

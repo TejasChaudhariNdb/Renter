@@ -3,7 +3,7 @@ import './profile.css';
 import base from './base.js';
 import { Link } from 'react-router-dom';
 
-export default function profile(name) {
+function profile(name) {
     return (
         <div className="container">
       <div className="card">
@@ -17,3 +17,7 @@ export default function profile(name) {
   </div>
     );
   }
+
+
+  
+export default withRouter(profile);

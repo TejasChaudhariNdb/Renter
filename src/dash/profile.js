@@ -1,6 +1,6 @@
 import React from 'react';
 import './profile.css';
-import base from './base.js';
+import base from '../base.js';
 import { Link ,withRouter} from 'react-router-dom';
 
 function profile(name) {

@@ -26,6 +26,18 @@ text-align: center;
   color:white !important;
   text-decoration-line: none;
   margin:5%;
+ 
+}
 
-  
+.login{
+  background-color: black;
+  margin:30px;
+}
+.dash{
+  background-color: green;
+  margin:30px;
+}
+.sign{
+  background-color: dodgerblue;
+  margin:30px;
 }
